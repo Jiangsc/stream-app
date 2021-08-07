@@ -15,7 +15,7 @@ const App = () => {
             <BrowserRouter>
                 <Header className="ui container" />
                 <div>
-                    <Route path="/" component={StreamList} />
+                    <Route exact path="/" component={StreamList} />
                     <Route path="/streams/new" component={StreamCreate} />
                     <Route path="/streams/edit" component={StreamEdit} />
                     <Route path="/streams/delete" component={StreamDelete} />
